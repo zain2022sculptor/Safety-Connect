@@ -3,7 +3,7 @@ import { FiBell, FiSettings, FiSearch } from "react-icons/fi";
 
 const Navbar = () => {
   return (
-    <div className="bg-[#112565] flex md:justify-between justify-center items-center h-16 p-8">
+    <div className="bg-[#112565] flex md:justify-between justify-center items-center h-16 p-8 w-full fixed">
       <div>
         <img src={logo} alt="logo" />
       </div>

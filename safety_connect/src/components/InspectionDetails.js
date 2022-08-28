@@ -1,16 +1,46 @@
 const InspectionDetails = () => {
   return (
-    <div className="mt-4 ml-4 p-4 md:p-8 bg-white rounded-md">
+    <div className="mt-20 md:mt-4 ml-4 p-4 md:p-8 bg-white rounded-md">
       <div className="hidden md:block">
-        <div>
-          <span>Inspections ID: 112233</span>
-          <span>Identification Number: 112233</span>
-          <span>Project: 112233</span>
-          <span>Location: Silo-2</span>
+        <div className="flex justify-between">
+          <div>
+            <span className="text-[#111111] font-semibold pb-2 pt-2">
+              Inspection ID:
+            </span>
+            <span className="text-[#727272] pl-4">112233</span>
+          </div>
+          <div>
+            <span className="text-[#111111] font-semibold pb-2 pt-2">
+              Identification Number:
+            </span>
+            <span className="text-[#727272] pl-4">EV-01</span>
+          </div>
+          <div>
+            <span className="text-[#111111] font-semibold pb-2 pt-2">
+              Project:
+            </span>
+            <span className="text-[#727272] pl-4">Truck Loading Silo</span>
+          </div>
+          <div>
+            <span className="text-[#111111] font-semibold pb-2 pt-2">
+              Location:
+            </span>
+            <span className="text-[#727272] pl-4">Silo-2</span>
+          </div>
         </div>
-        <div>
-          <span>Due Date: 112233</span>
-          <span>Inspection Date: Silo-2</span>
+        <div className="flex mt-8">
+          <div>
+            <span className="text-[#111111] font-semibold pb-2 pt-2">
+              Due Date:
+            </span>
+            <span className="text-[#727272] pl-4">March, 8 2021 10:30 am</span>
+          </div>
+          <div className="ml-12">
+            <span className="text-[#111111] font-semibold pb-2 pt-2">
+              Inspection Date:
+            </span>
+            <span className="text-[#727272] pl-4">March, 8 2021 10:30 am</span>
+          </div>
         </div>
       </div>
       <div className="md:hidden">
