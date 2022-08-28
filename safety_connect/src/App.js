@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import BreadCrumbNav from "./components/BreadCrumbNav";
+import InspectionDetails from "./components/InspectionDetails";
+import InspectionSummary from "./components/InspectionSummary";
+import Menu from "./components/Menu";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar />
+
+      <div className="flex">
+        <div className="hidden md:w-1/5 md:block">
+          <Menu />
+        </div>
+
+        <div className="w-full md:w-4/5 mr-4">
+          <BreadCrumbNav />
+          <InspectionDetails />
+          <InspectionSummary />
+        </div>
+      </div>
     </div>
   );
 }
